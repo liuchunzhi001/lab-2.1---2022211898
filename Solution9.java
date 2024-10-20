@@ -36,6 +36,7 @@ import java.util.List;
  * dislikes 中每一组都 不同
  *
  */
+//判断给定的“不喜欢”关系能否将人群分成两个集合，使得集合内的人互相不“不喜欢”,这可以通过判断图是否是二分图（Bipartite Graph）来实现。
 class Solution9 {
     public boolean possibleBipartition(int n, int[][] dislikes) {
         int[] fa = new int[n + 1]; // 并查集，初始化为节点自身
